@@ -1,0 +1,49 @@
+%text {
+  font-style: normal;
+  letter-spacing: 0.011em;
+  font-weight: 400;
+}
+
+%playfairdisplay {
+  @extend %text;
+  font-family: 'Playfair Display';
+}
+
+%ptsans {
+  @extend %text;
+  font-family: 'PT Sans';
+}
+
+
+@mixin pageTitle($color: #656565, $font-size: 32px) {
+  @extend %playfairdisplay;
+  color: $color;
+  font-size: $font-size;
+  line-height: 43px;
+  font-weight: 400;
+}
+
+@mixin pText($color: #3a3a3a, $font-size: 16px) {
+  @extend %ptsans;
+  color: $color;
+  font-size: $font-size;
+  line-height: 21px;
+  @media (max-width: 540px) {
+    font-size: 28px;
+  };
+}
+
+@mixin dText () {
+  @extend %ptsans;
+  color: #C0C0C0;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+@mixin filterBarButtonText($color: #3a3a3a, $font-size: 14px) {
+  @extend %ptsans;
+  color: $color;
+  font-size: $font-size;
+  line-height: 100%;
+  @media (max-width: 540px) {font-size: 12px;};
+}

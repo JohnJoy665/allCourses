@@ -1,0 +1,17 @@
+.iconContainer {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+
+  &_nonePad {
+    padding-right: 0;
+  }
+
+}
+
+.iconContainer:active,
+:hover,
+:focus {
+  outline: 0;
+  // border: none
+}

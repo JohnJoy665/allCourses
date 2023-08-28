@@ -1,0 +1,33 @@
+@import
+'../../styles/reset/reset.module.scss',
+'../../styles/mixins/texts.scss',
+'../../styles/fonts/playfair.scss',
+'../../styles/fonts/ptsans.scss',
+'../Title/Title.module.scss',
+'../FilterBar/FilterBar.module.scss',
+'../FilterButton/FilterButtons.module.scss',
+'../IconContainer/IconContainer.module.scss',
+'../TableItems/TableItems.module.scss';
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+
+  // padding-left: 15px;
+  // padding-right: 15px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  
+  .mainContainer {
+    background-color: #F9F9F9;
+    padding: 18px 20px;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 540px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+

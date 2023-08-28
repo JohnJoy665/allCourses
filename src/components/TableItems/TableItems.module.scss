@@ -1,0 +1,31 @@
+.tableItem {
+  margin-top: 10px;
+
+  &__link {
+    all: unset;
+
+    &:hover {
+      text-decoration: none;
+      all: unset;
+    }
+
+  }
+
+  &__row {
+    cursor: pointer;
+
+    &:hover {
+      background-color: #F9F9F9;
+      color: #E31683;
+    }
+
+    &Elem {
+      padding-left: 40px;
+      display: flex;
+      @include pText();
+
+    }
+
+  }
+
+}

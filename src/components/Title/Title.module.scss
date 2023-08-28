@@ -1,0 +1,13 @@
+.titlePage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px 30px;
+  
+  &__text {
+    @include pageTitle();
+    // font-family: smileFont;
+    // color: blue;
+  }
+}
